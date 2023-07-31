@@ -1,0 +1,157 @@
+
+body{
+    margin:80px 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caladea', serif;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Ubuntu', sans-serif;
+    border-style: double;
+    padding: 40px;
+
+}
+
+header{
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    
+}
+.centro {
+    text-align: center;
+   
+}
+section{
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+div {
+    text-align: center;
+    padding-left: 20px;
+}
+.redes {
+    width: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    
+}
+.icones {
+    width: 20px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+p {
+    margin-left: 60px;
+}
+li {
+    margin-left: 60px;
+}
+
+/*celulares*/
+@media (max-width:450px){
+    body {
+        width: 400px;
+        margin: 15px;
+        border-style:double;
+        display:inline-block;
+        padding: 0px;
+        text-align: center;
+    }
+    header {
+        margin-top: 20px;
+    }
+       
+    .foto {
+        width: 100px;
+        text-align: center;
+    }
+    h1 {
+        margin-top: 20px;
+        font-size:x-large;
+        border:0;
+        padding: 0;
+    }
+    .centro{
+        font-size: small;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    div {
+        padding: 0;
+    }
+    h2 {
+        text-align:left;
+        margin-left: 30px;
+        font-size: large;
+    }
+    p {
+        text-align: left;
+        margin-right: 30px;
+        font-size:small;
+    }
+    li {
+        text-align: left;
+        margin-right: 30px;
+        font-size: small;
+    }
+
+}
+/* galaxie s10 */
+@media (max-width:375px){
+    body {
+        width: 330px;
+        display: inline-block;
+    }
+    h1 {
+        font-size: x-large;
+        margin-top: 10px;
+    }
+    .centro{
+        font-size: small;
+    }
+    .redes {
+        margin: 0px 10px;
+    }
+    .icones{
+        width: 15px;
+    }
+    h2 {
+        margin-left: 20px;
+    }
+    p {
+        margin-left: 40px;
+    }
+    li {
+        margin-left: 40px;
+    }
+}
+
+/*tablets*/
+@media (min-width:768px) and (max-width:1080px){
+    body {
+        margin: 40px 50px;
+    }
+    .foto {
+        width: 250px;
+    }
+    h1 {
+        font-size:40px;
+    }
+    .centro {
+        font-size: large;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: large;
+    }
+    li {
+        font-size: large;
+    }
+}

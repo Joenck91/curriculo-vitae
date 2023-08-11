@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'font-icones';
-    src: url('/font/Social-Media-Circled.otf') format('opentype');
+    src: url('font/Social-Media-Circled.otf') format('opentype');
 }
 body{
     margin-top:50px;
@@ -21,6 +21,10 @@ body{
 .foto{
     border-radius: 15px;
     border: solid rgba(0, 0, 0, 0.747);
+}
+.foto:hover{
+    width: 350px;
+    box-shadow: 0 0 15px black;
 }
 header{
     text-align: center;
@@ -54,9 +58,9 @@ h1 {
     color: black;
 }
 .icones:hover{
-    width: 50px;
-    font-size: 40px;
-    color: red;
+    font-size: 50px;
+    color: black;
+    border-radius: 150%;
 }
 p {
     margin-left: 60px;

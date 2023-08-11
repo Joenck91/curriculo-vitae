@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'font-icones';
-    src: url('/font/Social-Media-Circled.otf') format('opentype');
+    src: url('font/Social-Media-Circled.otf') format('opentype');
 }
 body{
     margin-top:50px;

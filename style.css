@@ -1,192 +1,108 @@
+/*---------- BASE ----------*/
 
-@font-face {
-    font-family: 'font-icones';
-    src: url('font/Social-Media-Circled.otf') format('opentype');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: auto;
 }
 body{
-    margin-top:50px;
-    margin-bottom: 50px;
-    max-width: 900px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Caladea', serif;
     font-family: 'Nanum Myeongjo', serif;
     font-family: 'Ubuntu', sans-serif;
-    border-style: double;
-    border-width: 10px;
-    padding: 40px;
-    max-width: 1200px ;
-}
-.foto{
-    border-radius: 15px;
-    border: solid rgba(0, 0, 0, 0.747);
-}
-.foto:hover{
-    width: 350px;
-    box-shadow: 0 0 15px black;
-}
-header{
-    text-align: center;
-}
-h1 {
-    text-align: center;
-}
-.centro {
-    text-align: center;
-}
-.boxicones{
-    margin-bottom: 40px;
-    margin-left: 200px;
-    margin-right: 200px;
-    height: 70px;
-    display:flex;
-    justify-content:space-evenly;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-.redes {   
-    display: inline-flex;
-    font-family: 'font-icones';
-    font-size: 30px;  
+section{
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
-.icones {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+header{
+    margin-bottom: 10px;
+}
+div{
+    margin:10px 0;
+}
+p{
+    margin: 5px 0;
+}
+ul{
+    margin: 10px 20px;
+}
+h1, h2, h3{
+    font-family: "Exo 2", sans-serif;
+    color: rgb(22, 92, 125);
+}
+a{
     text-decoration: none;
-    font-size: 35px;
-    color: black;
+    color: rgb(0, 177, 64);
+    border-bottom: solid 2px rgb(0, 177, 64);
 }
-.icones:hover{
-    font-size: 50px;
-    color: black;
-    border-radius: 150%;
+li::marker{
+    color: rgb(22, 92, 125);;
 }
-p {
-    margin-left: 60px;
+strong{
+    color: rgb(7, 57, 80)
 }
-em{
-    font-size: 18px;
-    font-style: italic;
-}
-.boxhoteis{
-    padding-left: 0;
-}
-.hoteis{
-    text-align: left;
-    border-left:solid;
-    padding-left: 10px;
-}
-.boxfinanceiro{
-    padding-left: 0;
-}
-.financeiro{
-    text-align: left;
-    border-left:solid;
-    padding-left: 10px;
-}
-li {
-    margin-left: 60px;
-}
-/*celulares*/
-@media (max-width:450px){
-    body {
-        width: 400px;
-        margin: 15px;
-        border-style:double;
-        display:inline-block;
-        padding: 0px;
-        text-align: center;
-    }
-    header {
-        margin-top: 20px;
-    }
-       
-    .foto {
-        width: 100px;
-        text-align: center;
-    }
-    h1 {
-        margin-top: 20px;
-        font-size:x-large;
-        border:0;
-        padding: 0;
-    }
-    .centro{
-        font-size: small;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    div {
-        padding: 0;
-    }
-    h2 {
-        text-align:left;
-        margin-left: 30px;
-        font-size: large;
-    }
-    p {
-        text-align: left;
-        margin-right: 30px;
-        font-size:small;
-    }
-    li {
-        text-align: left;
-        margin-right: 30px;
-        font-size: small;
-    }
 
+
+/*---------- LAYOUT ----------*/
+.l-section{
+    max-width: 800px;
 }
-/* galaxie s10 */
-@media (max-width:375px){
-    body {
-        width: 330px;
-        display: inline-block;
-    }
-    h1 {
-        font-size: x-large;
-        margin-top: 10px;
-    }
-    .centro{
-        font-size: small;
-    }
-    .redes {
-        margin: 0px 10px;
-    }
-    .icones{
-        width: 15px;
-    }
-    h2 {
-        margin-left: 20px;
-    }
-    p {
-        margin-left: 40px;
-    }
-    li {
-        margin-left: 40px;
-    }
+.box-icons{
+    display: none;
+    flex-direction: row;
 }
-/*tablets*/
-@media (min-width:768px) and (max-width:1080px){
-    body {
-        margin: 40px 50px;
-    }
-    .foto {
-        width: 250px;
-    }
-    h1 {
-        font-size:40px;
-    }
-    .centro {
-        font-size: large;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    p {
-        font-size: large;
-    }
-    li {
-        font-size: large;
-    }
+.redes{
+    padding: 10px;
 }
+.formacao li{
+    margin-bottom: 7px;
+}
+.box-img{
+    width: fit-content;
+    border-left: solid 2px  rgb(255, 163, 0);
+    border-bottom: solid 5px  rgb(255, 163, 0);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.foto-perfil{
+    margin-left: -25px;
+    width: 250px;
+    height: auto;
+}
+.experiencias li{
+    margin-bottom: 15px;
+}
+.text-exp{
+    padding-left: 10px;
+}
+.border-left{
+    border-left: solid 1px rgb(255, 163, 0);
+    padding-left: 10px;
+}
+.financeiro p{
+    margin-bottom: 20px;
+}
+/*---------- MODULE ----------*/
+
+/*---------- STATE ----------*/
+a:visited {
+    color: rgb(0, 177, 64); /* Mantém a mesma cor mesmo após o clique */
+  }
+
+/*---------- THEME ----------*/

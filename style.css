@@ -13,7 +13,6 @@
     font-weight: 400;
     font-style: normal
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -93,6 +92,9 @@ h3::after, h2::after{
 }
 .redes{
     padding: 10px;
+}
+.formacao li{
+    margin-bottom: 7px;
 }
 .formacao li{
     margin-bottom: 7px;

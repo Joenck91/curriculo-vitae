@@ -1,4 +1,18 @@
 /*---------- BASE ----------*/
+@font-face {
+    font-family: "Ionicons";
+    src: url(https://static.weg.net/news/fonts/ionicons/ionicons.eot?v=1.5.2);
+    src: url(https://static.weg.net/news/fonts/ionicons/ionicons.eot?v=1.5.2#iefix) format("embedded-opentype"),url(https://static.weg.net/news/fonts/ionicons/ionicons.ttf?v=1.5.2) format("truetype"),url(https://static.weg.net/news/fonts/ionicons/ionicons.woff?v=1.5.2) format("woff"),url(https://static.weg.net/news/fonts/ionicons/ionicons.svg?v=1.5.2#Ionicons) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(https://static.weg.net/news/fonts/fontawesome/fontawesome-webfont.eot?v=4.2.0);
+    src: url(https://static.weg.net/news/fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.2.0) format("embedded-opentype"),url(https://static.weg.net/news/fonts/fontawesome/fontawesome-webfont.woff?v=4.2.0) format("woff"),url(https://static.weg.net/news/fonts/fontawesome/fontawesome-webfont.ttf?v=4.2.0) format("truetype"),url(https://static.weg.net/news/fonts/fontawesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
 
 *{
     margin: 0;
@@ -11,16 +25,13 @@ html, body{
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #fff;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Bebas Neue', sans-serif;
-    font-family: 'Caladea', serif;
-    font-family: 'Nanum Myeongjo', serif;
-    font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #595959;
 }
 section{
     width: 95%;
@@ -31,6 +42,7 @@ section{
 }
 header{
     margin-bottom: 10px;
+    line-height: 22px;
 }
 div{
     margin:10px 0;
@@ -42,8 +54,13 @@ ul{
     margin: 10px 20px;
 }
 h1, h2, h3{
-    font-family: "Exo 2", sans-serif;
-    color: rgb(22, 92, 125);
+    font-family: "Roboto", sans-serif;
+    color: #00579d;
+    line-height: 44px;
+    margin: 0 0 20px;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.42857;
 }
 a{
     text-decoration: none;
@@ -51,16 +68,24 @@ a{
     border-bottom: solid 2px rgb(0, 177, 64);
 }
 li::marker{
-    color: rgb(22, 92, 125);;
+    color: #00579d;;
 }
 strong{
-    color: rgb(7, 57, 80)
+    color: #00579d;
 }
 
 
 /*---------- LAYOUT ----------*/
 .l-section{
     max-width: 800px;
+}
+h3::after, h2::after{
+    background-color: #64c3d5;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 21px;
+    width: 48px;
 }
 .box-icons{
     display: none;
@@ -74,11 +99,8 @@ strong{
 }
 .box-img{
     width: fit-content;
-    border-left: solid 2px  rgb(255, 163, 0);
-    border-bottom: solid 5px  rgb(255, 163, 0);
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-left: solid 2px  #00579d;
+    border-bottom: solid 7px  #00579d;
 }
 .foto-perfil{
     margin-left: -25px;
@@ -92,7 +114,7 @@ strong{
     padding-left: 10px;
 }
 .border-left{
-    border-left: solid 1px rgb(255, 163, 0);
+    border-left: solid 1px #00579d;
     padding-left: 10px;
 }
 .financeiro p{
